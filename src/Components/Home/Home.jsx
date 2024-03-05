@@ -6,6 +6,7 @@ import Audiences from "./Audiences";
 import Partner from "./Partner";
 import VideoGallery from "./VideoGallery";
 import Join from "./Join";
+import Announcements from "./components/Announcements";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Header />
 
       <Services />
+      <Announcements />
       <Join />
       <Partner />
       <Audiences />
