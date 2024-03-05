@@ -19,6 +19,8 @@ import WebDev from "./Components/WebDev/WebDev";
 import Jobs from "./Components/Jobs/Jobs";
 import More from "./Components/More/More";
 
+const GIAN = 0;
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HowWe from "./Components/HowWe/HowWe";
 import VidServices from "./Components/VidServices/VidServices";
