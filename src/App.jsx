@@ -25,6 +25,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HowWe from "./Components/HowWe/HowWe";
 import VidServices from "./Components/VidServices/VidServices";
 import Partnership from "./Components/Partnership/Partnership";
+import Article from "./Components/Article/Article";
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
           <Route path="/jobs-careers" element={<VidServices />} />
           <Route path="/more-services" element={<More />} />
           <Route path="/pship" element={<Partnership />} />
+          <Route path="/article/:id" element={<Article />} />
         </Routes>
       </Router>
 
