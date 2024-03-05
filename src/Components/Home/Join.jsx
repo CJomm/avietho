@@ -3,7 +3,14 @@ import dep from "../../assets/dep.png";
 
 const Join = () => {
   return (
-    <div style={{ width: "100%", height: "50vh", paddingTop: "0px" }}>
+    <div
+      style={{
+        width: "100%",
+        height: "50vh",
+        paddingTop: "0px",
+        marginTop: 150,
+      }}
+    >
       <div
         className="wrapper"
         style={{
