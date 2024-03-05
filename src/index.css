@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Imported;
+  src: url(../src/Font/FrankRuhlLibre-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: Imported;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*.container {
+  width: 100vw;
+  min-height: 100vh;
+}
+*/

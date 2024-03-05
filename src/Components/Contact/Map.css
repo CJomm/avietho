@@ -1,0 +1,33 @@
+.map1 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map1 iframe1 {
+  left: 0;
+  top: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.map {
+  overflow: hidden;
+  padding-bottom: 40%; /* Adjust this percentage to make the map smaller */
+  position: relative;
+  height: 0;
+  margin: auto; /* Center the map */
+  max-width: 50%;
+}
+
+.map iframe {
+  left: 0;
+  top: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

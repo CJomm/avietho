@@ -1,0 +1,171 @@
+.skel {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #000 50%, #ffcc00 50%);
+}
+
+input {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.book {
+  display: flex;
+}
+
+#cover {
+  width: 400px;
+  height: 550px;
+}
+
+.flip-book {
+  width: 400px;
+  height: 550px;
+  margin: auto; /* Center the flip book */
+  position: relative;
+  perspective: 1500px;
+}
+
+.flip {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transform: rotate(0deg);
+  transition: 0.5s;
+  color: #000;
+}
+
+p {
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 13px;
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5) 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+
+.next-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 13px;
+  cursor: pointer;
+  color: #000;
+}
+
+.back-btn {
+  position: absolute;
+  bottom: 5px;
+  left: 13px;
+  cursor: pointer;
+  color: #000;
+}
+
+#p1 {
+  z-index: 5;
+}
+
+#p2 {
+  z-index: 4;
+}
+
+#p3 {
+  z-index: 3;
+}
+
+#p4 {
+  z-index: 2;
+}
+
+#p5 {
+  z-index: 1;
+}
+
+#c1:checked ~ .flip-book #p1 {
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+
+#c2:checked ~ .flip-book #p2 {
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+
+#c3:checked ~ .flip-book #p3 {
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+
+#c4:checked ~ .flip-book #p4 {
+  transform: rotateY(-180deg);
+  z-index: 4;
+}
+
+#c5:checked ~ .flip-book #p5 {
+  transform: rotateY(-180deg);
+  z-index: 5;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .skel {
+    margin: 0;
+    padding: 0;
+    height: 170vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(90deg, #000 50%, #ffcc00 50%);
+  }
+
+  .flip-book {
+    width: 200px;
+    height: 1020px;
+  }
+
+  #cover {
+    width: 200px;
+    height: 1020px;
+  }
+
+  .front {
+    padding: 0 10px;
+  }
+
+  .back-btn,
+  .next-btn {
+    font-size: 12px;
+  }
+}

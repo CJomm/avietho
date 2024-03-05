@@ -1,0 +1,86 @@
+.boxes {
+  margin: 20px;
+  margin-top: 40px;
+  background-color: #fff;
+  overflow: hidden;
+
+  max-height: 82vh;
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 10px 10px;
+}
+.box {
+  margin: 20px;
+  margin-top: 40px;
+  background-color: #fff;
+  overflow: hidden;
+
+  max-height: 70vh;
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.bo {
+  margin: 20px;
+  margin-top: 40px;
+  background-color: #fff;
+  overflow: hidden;
+
+  max-height: 70vh;
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.boxe {
+  margin: 20px;
+  margin-top: 40px;
+  background-color: #fff;
+  overflow: hidden;
+
+  max-height: 70vh;
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.boxx {
+  margin: 20px;
+  margin-top: 0px;
+  background-color: #fff;
+  overflow: hidden;
+
+  max-height: 70vh;
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.grids {
+  max-width: 50%;
+  margin: auto;
+}
+
+h5 {
+  font-weight: normal;
+}
+
+/* HowWe.css */
+
+/* Add media queries for different screen sizes */
+@media (max-width: 768px) {
+  .container {
+    /* Adjust background image size for smaller screens */
+    background-size: contain;
+  }
+
+  .boxes,
+  .box,
+  .boxe {
+    margin-top: 20px;
+    height: auto;
+    max-height: none;
+  }
+
+  .grids {
+    max-width: 100%;
+  }
+}
+
+/* Add more media queries as needed */
