@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 //import publicrelation from "../../../src/assets/publicrelation.png";
-import publicrelation from "../../../src/assets/public-relation.png";
-import digitalmarketing from "../../../src/assets/social-media.png";
-import webdev from "../../../src/assets/development.png";
-import more from "../../../src/assets/application.png";
-import jobscareers from "../../../src/assets/camera.png";
+import publicrelation from "../../../src/assets/n1.png";
+import digitalmarketing from "../../../src/assets/n2.png";
+import webdev from "../../../src/assets/n3.png";
+import more from "../../../src/assets/n5.png";
+import vid from "../../../src/assets/n4.png";
 
 const servicesData = [
   {
@@ -24,7 +24,7 @@ const servicesData = [
     link: "/web-development",
   },
   {
-    image: jobscareers,
+    image: vid,
     title: "Video Services",
     link: "/jobs-careers",
   },
@@ -50,9 +50,9 @@ const Services = () => {
         paddingTop: "40px",
       }}
     >
-      <h3 className="text-dark" style={{ textAlign: "center", color: "#fff" }}>
-        <b>WHAT WE OFFER</b>
-      </h3>
+      <h2 className="text-dark" style={{ textAlign: "center" }}>
+        WHAT WE OFFER
+      </h2>
 
       <div
         className="cards-container"
@@ -73,12 +73,12 @@ const Services = () => {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#000",
+              backgroundColor: "#ddd",
               padding: "20px",
               borderRadius: "15px",
-              boxShadow: "0 5px 20px rgba(0, 0, 0, 0.5)",
+              boxShadow: "0 5px 10px rgba(0, 0, 0, 0.9)",
               textDecoration: "none",
-              color: "#fff",
+              color: "#000",
               transition: "0.3s ease-in-out",
             }}
           >
@@ -86,8 +86,8 @@ const Services = () => {
               src={service.image}
               alt={service.title}
               style={{
-                width: "100px",
-                height: "100px",
+                width: "150px",
+                height: "auto",
                 borderRadius: "5%",
                 marginBottom: "15px",
               }}

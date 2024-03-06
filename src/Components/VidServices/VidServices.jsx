@@ -55,20 +55,22 @@ const VidServices = () => {
           <br />
           Promotion
           <br />
-          Teaser/Trailer
+          Teaser / Trailer
           <br />
           Infomercial
           <br />
           Video banking
           <br />
+          Aerial / drone footage
           <br />
-          <b>d. Production</b>
+          <br />
+          <b>3. Video Production</b>
           <br />
           <br />
           <b>a. On-ground events live streaming</b>
           <br />
           <br />
-          Technical
+          Technical Operations
           <br />
           Live Operator
           <br />
@@ -150,7 +152,7 @@ const styles = {
     marginTop: "20px",
   },
   buttonContainer: {
-    marginBottom: "10px",
+    marginBottom: "20px",
   },
   button: {
     display: "block",

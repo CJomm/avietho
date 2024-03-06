@@ -8,7 +8,7 @@ const Join = () => {
         width: "100%",
         height: "50vh",
         paddingTop: "0px",
-        marginTop: 150,
+        marginTop: 70,
       }}
     >
       <div

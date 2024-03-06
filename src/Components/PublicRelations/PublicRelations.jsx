@@ -1,163 +1,177 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
-import publicrelation from "../../assets/1.png";
+import aa from "../../assets/31.png";
+import bb from "../../assets/32.png";
+import cc from "../../assets/33.png";
+import p1 from "../../assets/p1.png";
+import p2 from "../../assets/p2.png";
+import p3 from "../../assets/p3.png";
+import p4 from "../../assets/p4.png";
+import p5 from "../../assets/p5.png";
+import p6 from "../../assets/p6.png";
+import p7 from "../../assets/p7.png";
+import mid from "../../assets/mid.png";
+import "../../../src/Components/PublicRelations/PublicRelation.css";
 
 const PublicRelations = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div style={styles.container}>
-      <h1 style={styles.heading}>PUBLIC RELATIONS</h1>
-      <div style={styles.contentContainer}>
+    <div className="container">
+      <h1 className="heading">TRADITIONAL AND DIGITAL PUBLIC RELATIONS</h1>
+      <div className="contentContainer">
         <img
-          src={publicrelation}
+          data-aos="flip-left"
+          src={aa}
           alt="Public Relations Image"
-          style={styles.image}
+          className="image"
         />
-        <div style={styles.paragraph}>
-          Avietho Digital Marketing Services involve strategic communication
-          activities to manage and maintain a positive image and reputation for
-          a company or individual. These services help organizations build
-          strong relationships with their audiences, including customers,
-          employees, investors, the media, and the general public.
-          <ul style={styles.list}>
-            <li>
-              <b>Media Relations:</b> Managing relationships with journalists,
-              bloggers, and other media professionals to secure positive media
-              coverage and handle crisis communications. <br />
-              <br />
-            </li>
-            <li>
-              <b> Press Release Creation and Distribution: </b>Crafting and
-              distributing official statements about company news, events,
-              product launches, or other updates to generate media and public
-              interest.
-              <br />
-              <br />
-            </li>
-            <li>
-              <b>Crisis Management:</b> Developing strategies and communication
-              plans to effectively handle and mitigate negative incidents or
-              crises that may impact clients' reputations.
-              <br />
-              <br />
-            </li>
-            <li>
-              <b>Reputation Management:</b> Monitoring and managing the online
-              reputation of a company or individual, including addressing
-              negative reviews, managing online presence, and responding to
-              feedback.
-              <br />
-              <br />
-            </li>
-            <li>
-              <b>Stakeholder Engagement:</b> Building relationships with key
-              stakeholders, such as customers, employees, investors, and
-              community members, to foster trust and support for an
-              organization.
-              <br />
-              <br />
-            </li>
-            <li>
-              <b>Event Planning and Management:</b> Organizing and promoting
-              events, such as conferences, press conferences, product launches,
-              and trade shows, to generate media coverage, attract attendees,
-              and enhance brand visibility.
-              <br />
-              <br />
-            </li>
-            <li>
-              <b>Social Media Management:</b> Developing and executing social
-              media strategies to engage with the target audience, share
-              relevant content, and enhance brand perception.
-            </li>
-          </ul>
+        <div className="imagesContainer">
+          <img
+            data-aos="zoom-in-right"
+            src={bb}
+            alt="Public Relations Image"
+            className="image2"
+          />
+          <img
+            data-aos="zoom-in-left"
+            src={cc}
+            alt="Public Relations Image"
+            className="image2"
+          />
+        </div>
+
+        <div className="paragraph">
+          Avietho Digital Marketing Services combines traditional and digital PR
+          to achieve numerous benefits including broader reach, synergy between
+          channels, adaptability to changing media landscapes, improved
+          measurement and analytics, brand consistency, increased visibility,
+          and enhanced engagement with your audience. By leveraging the
+          strengths of both approaches, we build a comprehensive PR strategy
+          that effectively communicates your brand's message and achieves your
+          communication objectives.
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              data-aos="zoom-in-right"
+              src={p2}
+              alt="Public Relations Image"
+              style={{
+                marginRight: "-50%",
+                maxWidth: "400px",
+                marginTop: "-1020px",
+              }}
+            />
+
+            <img
+              data-aos="zoom-in-right"
+              src={p4}
+              alt="Public Relations Image"
+              style={{
+                marginRight: "-50%",
+                maxWidth: "400px",
+                marginTop: "30px",
+              }}
+            />
+            <img
+              data-aos="zoom-in-right"
+              src={p6}
+              alt="Public Relations Image"
+              style={{
+                marginRight: "5%",
+                maxWidth: "400px",
+                marginTop: "1150px",
+              }}
+            />
+
+            <img
+              data-aos="zoom-in-left"
+              src={mid}
+              alt="Public Relations Image"
+              style={{
+                width: "50%",
+                maxWidth: "300px",
+                marginTop: "30px",
+              }}
+            />
+
+            <img
+              data-aos="zoom-in-left"
+              src={p1}
+              alt="Public Relations Image"
+              style={{
+                marginLeft: "5%",
+                maxWidth: "400px",
+                marginTop: "-1580px",
+              }}
+            />
+            <img
+              data-aos="zoom-in-left"
+              src={p3}
+              alt="Public Relations Image"
+              style={{
+                marginLeft: "-50%",
+                maxWidth: "400px",
+                marginTop: "-470px",
+              }}
+            />
+            <img
+              data-aos="zoom-in-left"
+              src={p5}
+              alt="Public Relations Image"
+              style={{
+                marginLeft: "-50%",
+                maxWidth: "400px",
+                marginTop: "600px",
+              }}
+            />
+            <img
+              data-aos="zoom-in-left"
+              src={p7}
+              alt="Public Relations Image"
+              style={{
+                marginLeft: "-50%",
+                maxWidth: "400px",
+                marginTop: "1670px",
+              }}
+            />
+          </div>
           Our public relations services help organizations, companies, and
           individuals shape their narratives, build brand credibility, manage
           crises, and ultimately cultivate positive public perception. These
           efforts foster trust, attract customers, and boost growth.
         </div>
       </div>
-      <div style={styles.exploreContainer}>
-        <h3 style={styles.exploreHeading}>
+      <div className="exploreContainer">
+        <h3 className="exploreHeading">
           <b>EXPLORE</b>
         </h3>
-        <div style={styles.buttonContainer}>
-          <Link to="/digital-marketing" style={styles.button}>
+        <div className="buttonContainer">
+          <Link to="/digital-marketing" className="button">
             <b> Digital & Social Media Marketing </b>
           </Link>
-          <Link to="/web-development" style={styles.button}>
+          <Link to="/web-development" className="button">
             <b> Web Development</b>
           </Link>
-          <Link to="/jobs-careers" style={styles.button}>
+          <Link to="/jobs-careers" className="button">
             <b>Video Services</b>
           </Link>
-          <Link to="/more-services" style={styles.button}>
+          <Link to="/more-services" className="button">
             <b> More Services</b>
           </Link>
         </div>
       </div>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    textAlign: "center",
-    paddingTop: "20px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  heading: {
-    marginBottom: "20px",
-    textAlign: "center",
-  },
-  contentContainer: {
-    width: "100%",
-    maxWidth: "800px",
-    textAlign: "justify",
-    paddingRight: "10px",
-    paddingLeft: "10px",
-  },
-  image: {
-    marginTop: "20px",
-    width: "80%",
-    maxWidth: "400px",
-    height: "auto",
-    display: "block",
-    margin: "0 auto",
-  },
-  paragraph: {
-    textAlign: "justify",
-    marginTop: "20px",
-    fontSize: "20px",
-    lineHeight: "30px",
-  },
-  list: {
-    textAlign: "justify",
-    fontSize: "20px",
-    marginTop: "20px",
-  },
-  exploreContainer: {
-    width: "100%",
-    textAlign: "center",
-  },
-  exploreHeading: {
-    marginTop: "20px",
-  },
-  buttonContainer: {
-    marginBottom: "10px",
-  },
-  button: {
-    display: "block",
-    padding: "10px",
-    backgroundColor: "#f0f0f0",
-    marginBottom: "10px",
-    textDecoration: "none",
-    color: "#000",
-    borderRadius: "5px",
-    width: "300px",
-    margin: "10px auto",
-  },
 };
 
 export default PublicRelations;

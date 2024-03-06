@@ -178,7 +178,7 @@ const styles = {
     marginTop: "20px",
   },
   buttonContainer: {
-    marginBottom: "10px",
+    marginBottom: "20px",
   },
   button: {
     display: "block",

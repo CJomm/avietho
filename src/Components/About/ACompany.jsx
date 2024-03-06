@@ -15,6 +15,7 @@ const ACompany = () => {
 
   return (
     <div
+      data-aos="zoom-in"
       style={{
         backgroundImage: `url(${build})`,
         backgroundSize: "cover",
@@ -25,6 +26,8 @@ const ACompany = () => {
       <div
         style={{
           padding: "20px",
+          maxWidth: "1000px", // Set a max-width for better readability on large screens
+          margin: "0 auto", // Center the content horizontally
         }}
       >
         <div data-aos="zoom-in" onContextMenu={preventDefault}>
@@ -32,22 +35,19 @@ const ACompany = () => {
             src={teamwork}
             alt="RJ Logo"
             style={{
-              width: "54%",
-              height: "40vh",
-              objectFit: "cover",
-              paddingTop: "0px",
+              width: "100%", // Make the image responsive
+              maxWidth: "1000px", // Set a max-width for better readability on large screens
+              height: "auto", // Maintain aspect ratio
               display: "block",
-              marginLeft: "auto",
-              marginRight: "auto",
+              margin: "0 auto", // Center the image horizontally
             }}
           />
         </div>
         <div
           style={{
-            width: "80%",
-            maxWidth: "800px",
-            margin: "0 auto",
+            width: "100%", // Make the text content responsive
             textAlign: "justify",
+            marginTop: "20px", // Add space between image and text content
           }}
         >
           <div data-aos="fade-up">

@@ -16,6 +16,8 @@ const More = () => {
           • Creative Content
           <br />
           • Video and Photo <br />
+          • Graphic Design
+          <br />
           • Template poster designs <br />
           <br />
           <b>PRINTING SERVICES</b>
@@ -105,7 +107,7 @@ const styles = {
     marginTop: "20px",
   },
   buttonContainer: {
-    marginBottom: "10px",
+    marginBottom: "20px",
   },
   button: {
     display: "block",
